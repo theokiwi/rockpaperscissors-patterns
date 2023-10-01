@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaunchBehaviour : MonoBehaviour
+public interface LaunchBehaviour 
 {
    public void DoAction(string identifier){
       
