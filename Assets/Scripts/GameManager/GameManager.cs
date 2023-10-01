@@ -90,13 +90,6 @@ public class GameManager : MonoBehaviour
         whoLost (playerCurrentElement, machineCurrentElement);
         DecreaseLife(loser);
         
-        GameObject[] objectsToDestroy = GameObject.FindGameObjectsWithTag("Clone");
-
-        foreach (GameObject obj in objectsToDestroy)
-        {
-            Destroy(obj);
-        }
-        
         Debug.Log("machineLifes " + machineLifes);
         Debug.Log("playerLifes" + playerLifes);
     }
