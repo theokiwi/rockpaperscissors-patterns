@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: a3f452f0ccdaf81cabb19b339288ed19
+  - enabled: 1
+    path: Assets/Scenes/Draw.unity
+    guid: 7240cfe942807d2a7bf19767250a5ec1
+  - enabled: 1
+    path: Assets/Scenes/PlayerWon.unity
+    guid: 2129a3a15f8ede683a6bea4b65610a97
+  - enabled: 1
+    path: Assets/Scenes/MachineWon.unity
+    guid: 462f700a6d7594437b978baf379224d7
   m_configObjects: {}
