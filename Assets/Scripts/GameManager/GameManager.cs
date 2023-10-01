@@ -68,14 +68,12 @@ public class GameManager : MonoBehaviour
         Debug.Log(loser);
         if(loser == Players.player){
             playerLifes--;
-            Debug.Log("entrou em reduzir a vida do player");
             if(playerLifes <= 0){
                 SceneManager.LoadScene("MachineWon");
             }
         }
         else if(loser == Players.machine){
             machineLifes--;
-            Debug.Log("entrou em reduzir a vida da maquina");
             if(machineLifes <= 0){
                 SceneManager.LoadScene("PlayerWon");
             }
@@ -91,6 +89,14 @@ public class GameManager : MonoBehaviour
     public void Turn(){
         whoLost (playerCurrentElement, machineCurrentElement);
         DecreaseLife(loser);
+        
+        GameObject[] objectsToDestroy = GameObject.FindGameObjectsWithTag("Clone");
+
+        foreach (GameObject obj in objectsToDestroy)
+        {
+            Destroy(obj);
+        }
+        
         Debug.Log("machineLifes " + machineLifes);
         Debug.Log("playerLifes" + playerLifes);
     }

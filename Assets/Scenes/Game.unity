@@ -2056,8 +2056,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979e0f69f38111cd6a0dd61438690f0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerLifes: 3
-  machineLifes: 3
+  playerLifes: 6
+  machineLifes: 6
   loser: 0
   playerCurrentElement: 0
   machineCurrentElement: 0
