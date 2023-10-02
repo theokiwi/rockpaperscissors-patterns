@@ -23,11 +23,4 @@ public class Paused : IState
         
     }
 
-    public void Pause(){
-
-    }
-
-    public void Resume(){
-        
-    }
 }

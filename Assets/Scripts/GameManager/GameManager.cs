@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -18,6 +20,9 @@ public class GameManager : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject chooseMenuUI;
 
+    public Slider playerSlider;
+    public Slider machineSlider;
+
 
     void Awake(){
         if (instance == null){
@@ -25,11 +30,19 @@ public class GameManager : MonoBehaviour
         }else{
             Destroy(gameObject);
         }
-        DontDestroyOnLoad(gameObject);
+        // DontDestroyOnLoad(gameObject);
         
         loser = Players.none;
         playerCurrentElement = Elements.none;
         machineCurrentElement = Elements.none;
+
+        currentState = new InGame();
+
+        playerLifes = 6;
+        machineLifes = 6;
+        
+        playerSlider.value = playerLifes;
+        machineSlider.value = machineLifes;
     }
 
     public void Update()
@@ -68,12 +81,14 @@ public class GameManager : MonoBehaviour
         Debug.Log(loser);
         if(loser == Players.player){
             playerLifes--;
+            playerSlider.value = playerLifes;
             if(playerLifes <= 0){
                 SceneManager.LoadScene("MachineWon");
             }
         }
         else if(loser == Players.machine){
             machineLifes--;
+            machineSlider.value = machineLifes;
             if(machineLifes <= 0){
                 SceneManager.LoadScene("PlayerWon");
             }
@@ -95,10 +110,6 @@ public class GameManager : MonoBehaviour
     }
     public void ChangeState(IState state){
         currentState = state;
-    }
-    public void StartGame(){
-        SceneManager.LoadScene("Game");
-        currentState = new InGame();
     }
 
 }

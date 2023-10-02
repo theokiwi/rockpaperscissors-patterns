@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class RegularUIController : MonoBehaviour
 {
     public GameObject pauseMenuUI;
     public GameObject chooseMenuUI;
-
     public static RegularUIController rController;
 
     public void Start(){
@@ -15,7 +15,7 @@ public class RegularUIController : MonoBehaviour
         
     }
     public void OnClickStart(){
-        GameManager.instance.StartGame();
+        SceneManager.LoadScene("Game");
     }
 
     public void ManagePauseMenu(){
@@ -37,10 +37,9 @@ public class RegularUIController : MonoBehaviour
     }
 
     public void OnButtonQuit(){
-        
+        Application.Quit();
     }
     public void OnClickMenu(){
         SceneManager.LoadScene("Menu");
     }
-    public void ManageChooseMenu(){}
 }
