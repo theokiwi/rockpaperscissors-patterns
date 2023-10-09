@@ -30,6 +30,7 @@ public class RegularUIController : MonoBehaviour
     }
     
     public void Resume(){
+        Time.timeScale = 1;
         chooseMenuUI.SetActive(true);
         pauseMenuUI.SetActive(false);
         Paused.isPaused = false;
