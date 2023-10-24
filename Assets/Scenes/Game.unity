@@ -553,8 +553,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 437e0bc1e17fa01049446401f1520d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 0}
-  chooseMenuUI: {fileID: 0}
+  pauseMenuUI: {fileID: 252632706}
+  chooseMenuUI: {fileID: 728945085}
+  playerSlider: {fileID: 1323006067}
+  machineSlider: {fileID: 651836420}
 --- !u!114 &252632708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -864,6 +866,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 252632706}
   chooseMenuUI: {fileID: 728945085}
+  playerSlider: {fileID: 1323006067}
+  machineSlider: {fileID: 651836420}
 --- !u!1 &651836419
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,8 +971,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 437e0bc1e17fa01049446401f1520d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 0}
-  chooseMenuUI: {fileID: 0}
+  pauseMenuUI: {fileID: 252632706}
+  chooseMenuUI: {fileID: 728945085}
+  playerSlider: {fileID: 1323006067}
+  machineSlider: {fileID: 651836420}
 --- !u!1 &657517255
 GameObject:
   m_ObjectHideFlags: 0
@@ -1233,6 +1239,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 252632706}
   chooseMenuUI: {fileID: 728945085}
+  playerSlider: {fileID: 1323006067}
+  machineSlider: {fileID: 651836420}
 --- !u!1 &966156647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1806,8 +1814,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 437e0bc1e17fa01049446401f1520d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 0}
-  chooseMenuUI: {fileID: 0}
+  pauseMenuUI: {fileID: 252632706}
+  chooseMenuUI: {fileID: 728945085}
+  playerSlider: {fileID: 1323006067}
+  machineSlider: {fileID: 651836420}
 --- !u!1 &1354508260
 GameObject:
   m_ObjectHideFlags: 0
@@ -2193,6 +2203,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 252632706}
   chooseMenuUI: {fileID: 728945085}
+  playerSlider: {fileID: 1323006067}
+  machineSlider: {fileID: 651836420}
 --- !u!1 &1487913479
 GameObject:
   m_ObjectHideFlags: 0
@@ -2409,6 +2421,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 252632706}
   chooseMenuUI: {fileID: 728945085}
+  playerSlider: {fileID: 1323006067}
+  machineSlider: {fileID: 651836420}
 --- !u!1 &1737598785
 GameObject:
   m_ObjectHideFlags: 0
@@ -2557,6 +2571,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 252632706}
   chooseMenuUI: {fileID: 728945085}
+  playerSlider: {fileID: 1323006067}
+  machineSlider: {fileID: 651836420}
 --- !u!1 &1826942214
 GameObject:
   m_ObjectHideFlags: 0
@@ -2685,10 +2701,6 @@ MonoBehaviour:
   loser: 0
   playerCurrentElement: 0
   machineCurrentElement: 0
-  pauseMenuUI: {fileID: 252632706}
-  chooseMenuUI: {fileID: 728945085}
-  playerSlider: {fileID: 1323006067}
-  machineSlider: {fileID: 651836420}
 --- !u!4 &1860346775
 Transform:
   m_ObjectHideFlags: 0

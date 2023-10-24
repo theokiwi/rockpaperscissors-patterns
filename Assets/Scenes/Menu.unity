@@ -901,7 +901,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1076382088}
-        m_TargetAssemblyTypeName: RegularUIController, Assembly-CSharp
+        m_TargetAssemblyTypeName: MenuUIController, Assembly-CSharp
         m_MethodName: OnClickStart
         m_Mode: 1
         m_Arguments:
@@ -959,11 +959,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1076382083}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437e0bc1e17fa01049446401f1520d8e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5554bca67b61f7724a00da087cdb873d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 0}
-  chooseMenuUI: {fileID: 0}
 --- !u!1 &1470152103
 GameObject:
   m_ObjectHideFlags: 0

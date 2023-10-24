@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 529281393}
   - component: {fileID: 529281392}
   - component: {fileID: 529281391}
-  - component: {fileID: 529281390}
+  - component: {fileID: 529281394}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
@@ -381,20 +381,6 @@ RectTransform:
   m_AnchoredPosition: {x: -1.9608, y: -4.5517}
   m_SizeDelta: {x: 544.8174, y: 251.4821}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &529281390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529281388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437e0bc1e17fa01049446401f1520d8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 0}
-  chooseMenuUI: {fileID: 0}
 --- !u!114 &529281391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -439,8 +425,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 529281390}
-        m_TargetAssemblyTypeName: RegularUIController, Assembly-CSharp
+      - m_Target: {fileID: 529281394}
+        m_TargetAssemblyTypeName: MenuUIController, Assembly-CSharp
         m_MethodName: OnClickMenu
         m_Mode: 1
         m_Arguments:
@@ -489,6 +475,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 529281388}
   m_CullTransparentMesh: 1
+--- !u!114 &529281394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529281388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5554bca67b61f7724a00da087cdb873d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1008386343
 GameObject:
   m_ObjectHideFlags: 0

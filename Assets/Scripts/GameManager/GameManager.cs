@@ -17,20 +17,13 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public IState currentState;
 
-    public GameObject pauseMenuUI;
-    public GameObject chooseMenuUI;
-
-    public Slider playerSlider;
-    public Slider machineSlider;
-
-
-    void Awake(){
+    void OnEnable(){
         if (instance == null){
             instance = this;
         }else{
             Destroy(gameObject);
         }
-        // DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
         
         loser = Players.none;
         playerCurrentElement = Elements.none;
@@ -41,8 +34,6 @@ public class GameManager : MonoBehaviour
         playerLifes = 6;
         machineLifes = 6;
         
-        playerSlider.value = playerLifes;
-        machineSlider.value = machineLifes;
     }
 
     public void Update()
@@ -81,14 +72,14 @@ public class GameManager : MonoBehaviour
         Debug.Log(loser);
         if(loser == Players.player){
             playerLifes--;
-            playerSlider.value = playerLifes;
+            RegularUIController.rController.DecreaseLifeUI(loser);
             if(playerLifes <= 0){
                 SceneManager.LoadScene("MachineWon");
             }
         }
         else if(loser == Players.machine){
             machineLifes--;
-            machineSlider.value = machineLifes;
+            RegularUIController.rController.DecreaseLifeUI(loser);
             if(machineLifes <= 0){
                 SceneManager.LoadScene("PlayerWon");
             }

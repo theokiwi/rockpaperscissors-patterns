@@ -8,6 +8,7 @@ public class WaitingForNextPlay : IState
         Enter();
     }
     public void Enter(){
+        Debug.Log("called end of turn");
         GameManager.instance.CallEndOfTurn();
     }
 

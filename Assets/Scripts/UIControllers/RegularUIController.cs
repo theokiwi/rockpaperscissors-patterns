@@ -8,14 +8,20 @@ public class RegularUIController : MonoBehaviour
 {
     public GameObject pauseMenuUI;
     public GameObject chooseMenuUI;
+
+    public Slider playerSlider;
+
+    public Slider machineSlider;
     public static RegularUIController rController;
 
+    public void Awake(){
+       
+    }
     public void Start(){
         rController = this;
+        playerSlider.value = GameManager.instance.playerLifes;
+        machineSlider.value = GameManager.instance.machineLifes;
         
-    }
-    public void OnClickStart(){
-        SceneManager.LoadScene("Game");
     }
 
     public void ManagePauseMenu(){
@@ -36,7 +42,14 @@ public class RegularUIController : MonoBehaviour
         Paused.isPaused = false;
         GameManager.instance.currentState = new InGame();
     }
-
+    public void DecreaseLifeUI(GameManager.Players loser){
+        if(loser == GameManager.Players.player){
+            playerSlider.value = GameManager.instance.playerLifes;
+        }
+        else if(loser == GameManager.Players.machine){
+            machineSlider.value = GameManager.instance.machineLifes;
+        }
+    }
     public void OnButtonQuit(){
         Application.Quit();
     }
